@@ -32,11 +32,11 @@ def check(brand: str):
 
 @app.get("/check-all")
 def check_all():
-
     all_alerts = []
 
     for brand, slug in BRANDS.items():
-        all_alerts.extend(check_brand(slug))
+        alerts = check_brand(slug)
+        all_alerts.extend(alerts)
 
     return {
         "total_alerts": len(all_alerts),
