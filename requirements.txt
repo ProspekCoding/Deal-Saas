@@ -1,8 +1,8 @@
+playwright
+apscheduler
 fastapi
 uvicorn
-sqlalchemy
 requests
 beautifulsoup4
 lxml
-playwright
-apscheduler
+sqlalchemy
